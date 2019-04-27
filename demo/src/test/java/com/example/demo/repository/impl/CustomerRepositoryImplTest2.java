@@ -35,7 +35,7 @@ public class CustomerRepositoryImplTest2 {
 	@Test
 	public void testGetCustomerList() {
 		List<Customer> customerList = customerRepository.getCustomerList();
-		Assert.assertEquals(2, customerList.size());
+		Assert.assertEquals(3, customerList.size());
 	}
 
 	List<Customer> customerListMock() {
@@ -45,10 +45,10 @@ public class CustomerRepositoryImplTest2 {
 		customer.setLastName("TEST LAST NAME");
 		customerListMock.add(customer);
 
-		Customer customer2 = new Customer();
-		customer2.setName("TEST NAME");
-		customer2.setLastName("TEST LAST NAME");
-		customerListMock.add(customer2);
+		customer = new Customer();
+		customer.setName("TEST NAME");
+		customer.setLastName("TEST LAST NAME");
+		customerListMock.add(customer);
 		return customerListMock;
 	}
 
