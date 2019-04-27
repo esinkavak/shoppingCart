@@ -35,7 +35,7 @@ public class CustomerRepositoryImplTest2 {
 	@Test
 	public void testGetCustomerList() {
 		List<Customer> customerList = customerRepository.getCustomerList();
-		Assert.assertEquals(1, customerList.size());
+		Assert.assertEquals(2, customerList.size());
 	}
 
 	List<Customer> customerListMock() {
